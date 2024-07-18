@@ -1,0 +1,85 @@
+*
+{
+    border-radius: 15px;
+}
+body
+{
+    background: linear-gradient(to right, darkslategray, cadetblue);
+}
+fenetre
+{
+    margin: auto 20%;
+}
+#right
+{
+    position: fixed;
+    width: 100px;
+    top: 50px;
+    right: 100px;
+}
+#calculatrice
+{
+    width: 320px;
+    height: 350px;
+    background: linear-gradient(to right, darkslategray, cadetblue);
+    margin: 50px auto 50px auto;
+    padding: 10px;
+    border: 5px solid cadetblue;
+    clear: right;
+}
+#screen, #screenCurrent
+{
+    text-align: right;
+    color: aquamarine;
+    background-color: darkslategrey;
+    width: 320px;
+    height: 30px;
+    border: 0;
+}
+#screen
+{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#screenCurrent
+{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+input[type="button"]
+{
+    width: 50px;
+    height: 50px;
+    background-color: aquamarine;
+}
+input[type="button"]:hover
+{
+    background-color: cadetblue;
+}
+#clear, #delete
+{
+    background-color: burlywood;
+}
+#nbr0,#nbr1,#nbr2,#nbr3,#nbr4,#nbr5,#nbr6,#nbr7,#nbr8,#nbr9
+{
+    background-color: darkslategrey;
+    color: aquamarine;
+}
+#nbr0
+{
+    width: 100%;
+}
+#equal
+{
+    background-color: darkcyan;
+    height: 105px;
+}
+#equal:hover
+{
+    background-color: rgba(0,139,139,0.5);
+    height: 105px;
+}
+#write
+{
+    background-color: cadetblue;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculatrice</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="calculatrice.css" type="text/css">
+        
+        <script src="calculatrice-1.js"></script>
+    </head>
+    
+    
+    <body>
+        <div id="fenetre">
+        
+        <div id="right">
+            <input type="button" value="mode sombre" onclick="mode()" id="button_mode">
+        </div>
+        
+        <div id="calculatrice">
+            <marquee><h2> Calculatrice </h2></marquee>
+            <form >
+                <input type="text" id="screen" disabled="disabled">
+                <input type="text" id="screenCurrent" disabled="disabled">
+                <table>
+                <tr>
+                <td><input type="button" value="7" onclick="affiche('7')" id="nbr7"></td>
+                <td><input type="button" value="8" onclick="affiche('8')" id="nbr8"></td>
+                <td><input type="button" value="9" onclick="affiche('9')" id="nbr9"></td>
+                <td><input type="button" value="/" onclick="affiche('/')" id="divis"></td>
+                <td><input type="button" value="C" onclick="clearTout()" id="clear"></td>
+                <td><input type="button" value="&#8592;" onclick="deleteOne()" id="delete"></td>    
+                </tr>
+                
+                <tr>
+                <td><input type="button" value="4" onclick="affiche('4')" id="nbr4"></td>
+                <td><input type="button" value="5" onclick="affiche('5')" id="nbr5"></td>
+                <td><input type="button" value="6" onclick="affiche('6')" id="nbr6"></td>
+                <td><input type="button" value="*" onclick="affiche('*')" id="multpl"></td>
+                <td><input type="button" value="(" onclick="affiche('(')" id="parg"></td>
+                <td><input type="button" value="X&sup2;" onclick="affiche('²')" id="puiss2"></td>
+				<!--<td><input type="button" value="X&ordf;" onclick="affiche('^')"" id="puiss2"></td>-->
+                </tr>
+                
+                <tr>
+                <td><input type="button" value="1" onclick="affiche('1')" id="nbr1"></td>
+                <td><input type="button" value="2" onclick="affiche('2')" id="nbr2"></td>
+                <td><input type="button" value="3" onclick="affiche('3')" id="nbr3"></td>
+                <td><input type="button" value="-" onclick="affiche('-')" id="moins"></td>
+                <td><input type="button" value=")" onclick="affiche(')')" id="pard"></td>
+                <td rowspan="2"><input type="button" value="=" onclick="calculer()" id="equal" accesskey="o"></td>
+                <!--  accesskey="key" : alt + shift + key in firefox, alt + key in chrome, cntrl + alt + key in MacOs
+                <td><button type="button" accesskey="o" onclick="calculer()">=</button></td>-->    
+                </tr>
+                
+                <tr>
+                <td colspan="2"><input type="button" value="0" onclick="affiche('0')" id="nbr0"></td>
+                <td><input type="button" value="." onclick="affiche('.')" id="virgule"></td>
+                <td><input type="button" value="%" onclick="affiche('%')" id="modulo"></td>     
+                <td><input type="button" value="+" onclick="affiche('+')" id="somme"></td> 
+                <!-- -->
+                </tr>
+                    
+                <tr></tr>    
+                
+                </table>
+            </form>
+        </div>
+        </div>
+        
+    </body>
+</html>
